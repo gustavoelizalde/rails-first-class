@@ -1,22 +1,9 @@
-<!--
-
-¿Qué sucede si se utiliza <%= @array.each {} %> en lugar de
-<% @array.each {} %>
-
-Respuesta:
-
-Si uso <%= @array.each {} %>, imprime en el html
-
-Si uso <% @array.each {} %>, procesa el codigo dentro del bloque, pero no lo imprime en el html.
-
--->
-
 <div class="top-bar">
 <div class="top-bar-left">
 <ul class="menu">
 <li class="menu-text">Yeti Agency</li>
-<li><a href="#">One</a></li>
-<li><a href="#">Two</a></li>
+<li><a href="<%= pages_about_path %>">About</a></li>
+<li><a href="<%= pages_contact_path %>">Contact</a></li>
 </ul>
 </div>
 <div class="top-bar-right">
